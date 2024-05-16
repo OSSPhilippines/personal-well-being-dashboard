@@ -4,6 +4,12 @@ In recent years, there has been a significant increase in business investments i
 
 Similarly, the Personal Well-being Dashboard aims to help individuals consolidate various aspects of their well-being: physical, financial, and digital. The goal of the project is not to consolidate data from various individuals, but to enable each person to access their own stats for personal consumption.
 
-While the ultimate aim is a dashboard, the majority of the project will be focused on the data engineering aspect: ingesting, transforming, and modeling data. We aim for the process to be as automated and streamlined as possible. Please view this temporary [GSheet](https://docs.google.com/spreadsheets/d/1SJqBCFfW5xbAVZHrJTgjHP72mbmL_OkWQybg7wFjV3E/edit?usp=sharing) for the data and work flow.
+While the ultimate aim is a dashboard, the majority of the project will be focused on the data engineering aspect: ingesting, transforming, and modeling data. We aim for the process to be as automated and streamlined as possible.
 
 We're looking for anyone who wants to contribute! No prior experience is required. You can contribute in any capacity that matches your skills and interests. We can also provide guidance if needed.
+
+Useful links:
+[Data and Work Flow GSheet](https://docs.google.com/spreadsheets/d/1SJqBCFfW5xbAVZHrJTgjHP72mbmL_OkWQybg7wFjV3E/edit?usp=sharing)
+[Collaboration GSheet](https://docs.google.com/spreadsheets/d/1CqKHzhlnyljzaUbkVFH_9-DAhEfuX9-Owumpikoj8gM/edit?usp=sharing)
+[Facebook Group Chat](https://m.me/j/AbaL6CMK9vjk3U8l/)
+[Youtube Project Intro Videos](https://www.youtube.com/watch?v=Gup80_6nNw4&list=PLgB1IGvclbuMWY6V9Z4dgL370FpqvyAlM)
