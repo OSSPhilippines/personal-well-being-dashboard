@@ -9,13 +9,12 @@ While the ultimate aim is a dashboard, the majority of the project will be focus
 We're looking for anyone who wants to contribute! No prior experience is required. You can contribute in any capacity that matches your skills and interests. We can also provide guidance if needed.
 
 Useful links:
-[Data and Work Flow GSheet](https://docs.google.com/spreadsheets/d/1SJqBCFfW5xbAVZHrJTgjHP72mbmL_OkWQybg7wFjV3E/edit?usp=sharing)
-[Collaboration GSheet](https://docs.google.com/spreadsheets/d/1CqKHzhlnyljzaUbkVFH_9-DAhEfuX9-Owumpikoj8gM/edit?usp=sharing)
-[Facebook Group Chat](https://m.me/j/AbaL6CMK9vjk3U8l/)
-[Youtube Project Intro Videos](https://www.youtube.com/watch?v=Gup80_6nNw4&list=PLgB1IGvclbuMWY6V9Z4dgL370FpqvyAlM)
+- [Data and Work Flow GSheet](https://docs.google.com/spreadsheets/d/1SJqBCFfW5xbAVZHrJTgjHP72mbmL_OkWQybg7wFjV3E/edit?usp=sharing)
+- [Collaboration GSheet](https://docs.google.com/spreadsheets/d/1CqKHzhlnyljzaUbkVFH_9-DAhEfuX9-Owumpikoj8gM/edit?usp=sharing)
+- [Facebook Group Chat](https://m.me/j/AbaL6CMK9vjk3U8l/)
+- [Youtube Project Intro Videos](https://www.youtube.com/watch?v=Gup80_6nNw4&list=PLgB1IGvclbuMWY6V9Z4dgL370FpqvyAlM)
 
 Credits are given to below repositories.
 Please refer to their documentation for the setup guides:
-
-https://github.com/jeremyephron/simplegmail
-https://github.com/sladkovm/stravaio
+- https://github.com/jeremyephron/simplegmail
+- https://github.com/sladkovm/stravaio
