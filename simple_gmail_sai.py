@@ -9,18 +9,19 @@ gmail = Gmail()
 gmail_downloader = GmailDownloader(gmail)
 
 ## this is for parameter filtering
-domains = ["gcash.com", "unionbankph.com"]
+domains = ["*@gcash.com", "*@unionbankph.com"]
 keywords = ["Bills Pay Receipt", "Unionbank Receipt"]
-
-params = {
-    "sender": domains,
-    "subject": keywords,
-}
-
-start_date = datetime(2024, 2, 1)  # Start from Feb 1, 2024
+start_date = datetime(2023, 2, 1)  # Start from Feb 1, 2023
 end_date = datetime.now()  # Up to the current date
 
-messages = gmail.get_messages(after=start_date, before=end_date, query=construct_query(params), include_spam_trash=False)
+query = ''
+
+
+query += ' OR '.join([f" from: {domain}" for domain in domains])
+
+query += ' OR '.join([f" subject: {keyword}" for keyword in keywords])
+
+messages = gmail.get_messages(start_date=start_date, end_date=end_date, query=query, include_spam_trash=False)
 
 df = gmail_downloader.process_messages(messages)
 
