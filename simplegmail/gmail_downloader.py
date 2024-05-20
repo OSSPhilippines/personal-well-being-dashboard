@@ -33,7 +33,7 @@ class GmailDownloader:
 
             # Save the attachments
             
-            # self.save_attachments(message)
+            self.save_attachments(message)
 
         return pd.DataFrame(data)
 
