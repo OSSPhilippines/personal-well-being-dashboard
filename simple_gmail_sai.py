@@ -1,9 +1,11 @@
 from simplegmail import Gmail
 from simplegmail.query import construct_query
 import pandas as pd
+from simplegmail.gmail_downloader import GmailDownloader
 
 gmail = Gmail()
 
+gmail_downloader = GmailDownloader(gmail)
 
 ## this is for parameter filtering
 domains = ["gcash.com", "unionbankph.com"]
@@ -14,15 +16,8 @@ params = {
     "subject": keywords,
 }
 
-messages = gmail.get_messages(query=construct_query(params), include_spam_trash=False) ## if you want to get all the messages, remove the query
+messages = gmail.get_messages(query=construct_query(params), include_spam_trash=False)
 
-df = []
+df = gmail_downloader.process_messages(messages)
 
-for message in messages:
-    if message.plain is not None:
-        df.append({"sender": message.sender, "subject": message.subject, "body": message.plain})
-    
-df = pd.DataFrame(df)
- 
-print(df)
-
+df.head(10)

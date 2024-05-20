@@ -32,12 +32,15 @@ class GmailDownloader:
             data.append(message_data)
 
             # Save the attachments
-            self.save_attachments(message)
+            
+            # self.save_attachments(message)
 
         return pd.DataFrame(data)
 
     def save_attachments(self, message):
         """Save attachments to a folder."""
+        
+        
         if message.attachments:
             for c, attm in enumerate(message.attachments, start=1):
                 attm.filename = self.clean_string(attm.filename)
