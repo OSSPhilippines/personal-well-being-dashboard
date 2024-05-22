@@ -18,3 +18,37 @@ Credits are given to below repositories.
 Please refer to their documentation for the setup guides:
 - https://github.com/jeremyephron/simplegmail
 - https://github.com/sladkovm/stravaio
+
+## Setting up a free BigQuery account
+
+1. **Initial Set-up**
+    1. Sign in to your Google account.
+    2. Go to [Google Cloud Console](https://console.cloud.google.com/).
+    3. Select or create a new project from the project drop-down menu in the top navigation bar *(this project will be used for your BigQuery setup)*.
+2. **Enable BigQuery API**
+    1. Select the project from newly created project from the project drop-down menu in the top navigation bar.
+    2. Enable BigQuery API by clicking [here](https://console.developers.google.com/apis/library/bigquery-json.googleapis.com/).
+3. **Create a Service Account**
+    1. Make sure you are logged in to your Google Cloud Console project.
+    2. In the navigation menu, click `IAM & admin` and select `Service Accounts`.
+    3. Click the `Create Service Account` button to set up a new Service Account.
+    4. Enter a unique name for your Service Account.
+    5. Select `JSON` as the Key type from the dropdown menu.
+    6. Click `Create` to create the Service Account.
+
+> [!NOTE] 
+> A JSON file containing credentials for the Service Account will be downloaded to your computer. Keep this file secure, as it grants access to your BigQuery resources.
+
+4. **Grant Permissions to Your Service Account**
+    1. Click on the hamburger menu `☰` and navigate to `IAM & admin`, click on `IAM` from the left menu.
+    2. Click on the `ADD` button to grant permissions to your Service Account.
+    3. Paste the Service Account ID you saved earlier into the `New members` field.
+    4. In the `Role` field, select `BigQuery Admin` from the dropdown menu.
+    5. Additionally, ensure the `Project Browser` role is also selected to avoid errors.
+    6. Click `Save` to grant the necessary permissions to your Service Account.
+
+### Other references
+
+* [Set up free Google BigQuery](https://levelup.gitconnected.com/how-to-use-google-bigquery-for-free-9c2a65e3a78c)
+* [Setting up free BigQuery video walkthrough](https://youtu.be/BaweqxbOEM0?si=5JVaGJYmyOLyQOUe)
+* [Using BigQuery Sandbox video walkthrough](https://youtu.be/JLXLCv5nUCE?si=Z7Z1ay6iue8cTT_V)
