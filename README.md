@@ -46,7 +46,7 @@ Credits are given to below repositories.
 4. **Grant Permissions to Your Service Account**
     1. Click on the hamburger menu `☰` and navigate to `IAM & admin`, click on `IAM` from the left menu.
     2. Click on the `GRANT ACCESS` button to grant permissions to your Service Account.
-    3. Paste 'main-service-account@personal-well-being-dashboard.iam.gserviceaccount.com' into the `New principals` field.
+    3. Paste eg 'main-service-account@personal-well-being-dashboard.iam.gserviceaccount.com' into the `New principals` field.
     4. In the `Role` field, select `BigQuery Admin` from the dropdown menu.
     5. Click `Save` to grant the necessary permissions to your Service Account.
 
