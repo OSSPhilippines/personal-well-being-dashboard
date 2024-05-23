@@ -59,6 +59,21 @@ Credits are given to below repositories.
 > [!NOTE] 
 > Let's consider replacing the above references in the future with official documentation from BigQuery
 
+
+## How to Connect Google Sheets to BigQuery
+1. On your computer, open a spreadsheet in [Google Sheets](https://docs.google.com/spreadsheets/u/0/).
+2. In the menu at the top, click `Data`, `Data connectors`, and `Connect to BigQuery`.
+3. Choose a cloud project. If you don't find any projects, you need to add one.
+4. Choose a table or view. (You can pick from any company table you have access to or from public data sets.)
+5. Click Connect and start analyzing.
+
+### Other references
+* [Connected Sheets | Full Tutorial](https://www.youtube.com/watch?v=rkimIhnLKGI)
+* [Use BigQuery data in Google Sheets](https://support.google.com/docs/topic/9699960?hl=en&ref_topic=9054603&sjid=2482722119219407644-AP)
+* [Load and query data with the Google Cloud console | BigQuery](https://cloud.google.com/bigquery/docs/quickstarts/load-data-console)
+
+
+
 ## Setting up Gmail API
 
 The only setup required is to download an OAuth 2.0 Client ID file from Google
