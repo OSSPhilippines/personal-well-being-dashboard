@@ -1,9 +1,4 @@
-!pip install discord.py
-!pip install pandas
-!pip install openpyxl
-
 import discord
-import asyncio
 import pandas as pd
 
 # Intents
@@ -19,9 +14,13 @@ df = pd.DataFrame(columns=['Author', 'Content'])
 @client.event
 async def on_ready():
     print(f'Logged in as {client.user}')
+    await fetch_messages(CHANNEL_ID)
 
-    # Replace CHANNEL_ID with the ID of your #general channel
-    channel = client.get_channel(CHANNEL_ID)
+async def fetch_messages(channel_id):
+    channel = client.get_channel(channel_id)
+    if channel is None:
+        print(f"Channel with ID {channel_id} not found")
+        return
 
     # Fetch message history
     messages = []
@@ -35,14 +34,11 @@ async def on_ready():
     # Print DataFrame
     print(df)
 
-# Replace 'YOUR_TOKEN' with your bot's token
-async def main():
-    await client.start('YOUR_TOKEN')
+    # Save DataFrame to Excel
+    df.to_excel('message_history.xlsx', index=False)
+    print("Messages saved to message_history.xlsx")
 
-# Replace 'YOUR_TOKEN' with your bot's token
-# Start the bot using asyncio.create_task()
-loop = asyncio.get_event_loop()
-loop.create_task(main())
-
-# Export DataFrame to Excel
-df.to_excel('message_history.xlsx', index=False)
+def run_discord_bot(token, channel_id):
+    global CHANNEL_ID
+    CHANNEL_ID = channel_id
+    client.run(token)
