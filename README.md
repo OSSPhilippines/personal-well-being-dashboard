@@ -61,6 +61,15 @@ Credits are given to below repositories.
 
 
 ## How to Connect Google Sheets to BigQuery
+
+To access BigQuery data in Google Sheets, you need to meet all of the following requirements:
+- Access to the Google Cloud platform. If you're an admin, [learn how to turn on GCP for your organization.](https://support.google.com/a/answer/9197205)
+- BigQuery access. [Learn how to get BigQuery](https://cloud.google.com/bigquery/).
+- A project with billing setup in BigQuery. [Learn how to set up Google Cloud billing](https://cloud.google.com/bigquery/docs/sandbox).
+    - If you don't have a project with a billing setup, you can work with BigQuery data in a trial environment. [Learn how to try BigQuery](https://cloud.google.com/bigquery/docs/sandbox).
+- [Learn more about the permissions and roles needed to access a BigQuery table or dataset.](https://support.google.com/a/answer/9604541)
+
+**Add a BigQuery project**
 1. On your computer, open a spreadsheet in [Google Sheets](https://docs.google.com/spreadsheets/u/0/).
 2. In the menu at the top, click `Data`, `Data connectors`, and `Connect to BigQuery`.
 3. Choose a cloud project. If you don't find any projects, you need to add one.
