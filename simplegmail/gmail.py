@@ -486,8 +486,6 @@ class Gmail(object):
         user_id: str = 'me',
         labels: Optional[List[Label]] = None,
         query: str = '',
-        start_date = None,
-        end_date = None,
         attachments: str = 'reference',
         include_spam_trash: bool = False
     ) -> List[Message]:
@@ -522,11 +520,6 @@ class Gmail(object):
             lbl.id if isinstance(lbl, Label) else lbl for lbl in labels
         ]
         
-        if start_date:
-            query += f' after:{start_date.strftime("%Y/%m/%d")}'
-        
-        if end_date:
-            query += f' before: {end_date.strftime("%Y/%m/%d")}'
 
         try:
             response = self.service.users().messages().list(
