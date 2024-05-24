@@ -520,7 +520,6 @@ class Gmail(object):
             lbl.id if isinstance(lbl, Label) else lbl for lbl in labels
         ]
 
-
         try:
             response = self.service.users().messages().list(
                 userId=user_id,
