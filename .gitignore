@@ -118,5 +118,6 @@ client_secret.json
 gmail-token.json
 gmail_token.json
 test.py
+attachments/*
 
 .DS_Store
