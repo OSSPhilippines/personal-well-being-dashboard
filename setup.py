@@ -28,3 +28,28 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
 )
+
+setuptools.setup(
+    name='load_bigquery',
+    version='0.1',
+    author="JFY",
+    packages=find_packages(),
+    install_requires=[
+        'requests',
+        'pandas',
+        'openpyxl',
+        'google-cloud-bigquery'
+    ],
+)
+
+setuptools.setup(
+    name='extract_discord',
+    version='0.1',
+    author="JFY",
+    packages=find_packages(),
+    install_requires=[
+        'discord.py',
+        'pandas',
+        'openpyxl'
+    ],
+)
