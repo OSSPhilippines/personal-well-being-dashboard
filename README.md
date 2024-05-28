@@ -16,48 +16,6 @@ Useful links:
 
 Credits are given to below repositories.
 - https://github.com/jeremyephron/simplegmail (for extracting Gmail data)
-- https://github.com/sladkovm/stravaio (might be used in the future)
-
-## Setting up BigQuery API
-
-1. **Initial Set-up**
-    1. Sign in to your Google account.
-    2. Go to [Google Cloud Console](https://console.cloud.google.com/).
-    3. Select or create a new project from the project drop-down menu in the top navigation bar *(This project will be used for your BigQuery setup.
-    Optionally, you may name the project 'personal-well-being-dashboard')*.
-2. **Enable BigQuery API**
-    1. Select the project from newly created project from the project drop-down menu in the top navigation bar.
-    2. Enable BigQuery API by clicking [here](https://console.cloud.google.com/apis/library/bigquery.googleapis.com).
-3. **Create a Service Account**
-    1. Make sure you are logged in to your Google Cloud Console project.
-    2. In the navigation menu, click `IAM & admin` and select `Service Accounts`.
-    3. Click the `Create Service Account` button to set up a new Service Account.
-    4. Enter a unique name for your Service account name and Service account ID.
-       For example, you may assign 'personal-well-being-dashboard' to Service account name,
-       and 'main-service-account' to Service account ID. This will result to 'main-service-account@personal-well-being-dashboard.iam.gserviceaccount.com'
-    5. Click `Next` for steps 2 and 3, which are optional.
-    6. On the right side of the created service account, click the three-dot button for the actions.
-    7. Click manage permissions.
-    8. Click `KEYS`, `ADD KEY`, `Create new key`, `JSON`, then `Create`.
-
-> [!NOTE] 
-> A JSON file containing credentials for the Service Account will be downloaded to your computer. Keep this file secure, as it grants access to your BigQuery resources.
-
-4. **Grant Permissions to Your Service Account**
-    1. Click on the hamburger menu `☰` and navigate to `IAM & admin`, click on `IAM` from the left menu.
-    2. Click on the `GRANT ACCESS` button to grant permissions to your Service Account.
-    3. Paste eg 'main-service-account@personal-well-being-dashboard.iam.gserviceaccount.com' into the `New principals` field.
-    4. In the `Role` field, select `BigQuery Admin` from the dropdown menu.
-    5. Click `Save` to grant the necessary permissions to your Service Account.
-
-### Other references
-
-* [Set up free Google BigQuery](https://levelup.gitconnected.com/how-to-use-google-bigquery-for-free-9c2a65e3a78c)
-* [Setting up free BigQuery video walkthrough](https://youtu.be/BaweqxbOEM0?si=5JVaGJYmyOLyQOUe)
-* [Using BigQuery Sandbox video walkthrough](https://youtu.be/JLXLCv5nUCE?si=Z7Z1ay6iue8cTT_V)
-
-> [!NOTE] 
-> Let's consider replacing the above references in the future with official documentation from BigQuery
 
 ## Setting up Gmail API
 
@@ -85,3 +43,11 @@ link above (and logging in to the appropriate account),
    will open, and you'll be asked to give permissions to the application. This 
    will save an access token in a file named "gmail-token.json", and only needs to 
    occur once.
+
+## Installing simplegmail
+
+Install using pip (Python3):
+
+```bash
+pip3 install simplegmail
+```
