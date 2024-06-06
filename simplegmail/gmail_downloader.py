@@ -35,7 +35,7 @@ class GmailDownloader:
             
             self.save_attachments(message)
 
-        return pd.DataFrame(data)
+        return data
 
     def save_attachments(self, message):
         """Save attachments to a folder."""
